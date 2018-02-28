@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import { ExercisePage } from '../exercise/exercise';
+
 @Component({
   selector: 'page-exercises',
   templateUrl: 'exercises.html'
@@ -17,8 +19,9 @@ export class ExercisesPage {
     ['Übung 3', 'Lorem Ipsum'],
   ];
 
-  itemSelected(item: string) {
-    console.log("Selected Item", item);
+  itemSelected(event, item) {
+    console.log("Selected Item:", item[0]);
+    this.navCtrl.push(ExercisePage);
   }
 
 }

@@ -7,10 +7,12 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemSelected(item[0])">
-      <h2>{{item[0]}}</h2>
-      <p>{{item[1]}}</p>
-    </button>
-  </ion-list>
+  <ion-card>
+    <ion-list>
+      <button ion-item *ngFor="let item of items" (click)="itemSelected(event, item)">
+        <h2>{{item[0]}}</h2>
+        <p>{{item[1]}}</p>
+      </button>
+    </ion-list>
+  </ion-card>
 </ion-content>
