@@ -11,4 +11,14 @@ export class AboutPage {
 
   }
 
+  items = [
+    ['Übung 1', 'Lorem Ipsum'],
+    ['Übung 2', 'Lorem Ipsum'],
+    ['Übung 3', 'Lorem Ipsum'],
+  ];
+
+  itemSelected(item: string) {
+    console.log("Selected Item", item);
+  }
+
 }
